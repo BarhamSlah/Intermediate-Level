@@ -20,7 +20,8 @@ Since an anonymous inner class has no name, you can never write a constructor fo
 
 
 When we have an abstract class, we cannot directly instantiate an object from it. However, when we use an anonymous inner class, it doesn't give a compiler error. 
-
+So normal method outside object but anonymous inner class method inside object.
+ 
 **********************************************************************************************************************************************************************
  
 abstract public class A{
