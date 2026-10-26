@@ -1,3 +1,7 @@
+// To create manual exception you should create 
+1- create class and extend Exception 
+2- create constructor and pass parameter     
+
 public class ManuallyException extends Exception{
     ManuallyException(String text){
         super(text);
