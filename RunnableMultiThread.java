@@ -1,3 +1,16 @@
+USING BOTH EXTENDS AND IMPLEMENTS TOGETHER IS A POWERFUL FEATURE IN JAVA BECAUSE IT LETS YOU COMBINE CODE REUSE WITH INTERFACE FLEXIBILITY.
+
+Strict Rule : Just remember that extends must always come first, followed by implements. 
+    
+**********************************************************************************************************************************************************************************************************
+IMPLEMENTING RUNNABLE AND PASSING IT TO A THREAD OBJECT IS THE DEFINITIVE BEST PRACTICE FOR ENTERPRISE BACKEND DEVELOPMENT INSTEAD OF USING EXTENDS THREAD
+    
+1- No Class Limit : Java only lets you inherit from one class. If your class already extends something else, extends Thread won't work.
+
+2- If you use extends Thread it is just like 1 worker and 1 plan but If you use implements Runnable 1 plan and as you want worker 
+    
+**********************************************************************************************************************************************************************************************************
+
 class MultiThread implements Runnable {
 
     int num;
