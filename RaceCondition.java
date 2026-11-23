@@ -38,6 +38,7 @@ start() = Start working!
 
     int balance = 1000;
 
+    // synchronized do not let race condition happen 
    synchronized void withdraw(int amount){
         if(balance >= amount){
             balance -= amount;
@@ -47,11 +48,13 @@ start() = Start working!
 
 }
 
-void main(String[] args) throws InterruptedException{
-
 Account account = new Account();
 
+void main(String[] args) throws InterruptedException{
+ // Both Thread.sleep() and thread.join() can throw InterruptedException.
+// Java requires you to handle this checked exception.   
 
+ // Runnable = What should be done? && run() = The actual work   
 Runnable task = new Runnable() {
     @Override
     public void run() {
