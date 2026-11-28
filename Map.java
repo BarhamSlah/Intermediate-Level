@@ -153,4 +153,13 @@ Map provides direct key-based lookup, which is often more convenient.
 - ConcurrentHashMap supports concurrent access.
 - Hashtable is an older implementation.
 
+
+ - remove(key) → Removes an entry using its key.
+- Normal application → HashMap.
+- Need sorted keys → TreeMap.
+- Need insertion order → LinkedHashMap.
+- Multiple threads sharing a map → ConcurrentHashMap.
+- Hashtable → Older synchronized class; rarely needed in modern Java.   
+
+    
 **Most important idea:** Use List when you need a collection of elements. Use Map when you need to find values using unique keys.
